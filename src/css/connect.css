@@ -1,19 +1,19 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #1E1E1E; /* Dark background for consistency */
+    color: #D1D1D1; /* Light gray text for readability */
 }
 
 h1, h2 {
     margin: 0;
-    color: #222;
+    color: #fff; /* White text for headings */
 }
 
 a {
-    color: #007bff;
+    color: #00A4FF; /* Light blue for links */
     text-decoration: none;
 }
 
@@ -30,10 +30,11 @@ a:hover {
 
 /* Header Styles */
 header {
-    background-color: #0056b3;
+    background-color: #111; /* Dark background for header */
     color: #fff;
     padding: 40px 20px;
     text-align: center;
+    border-bottom: 3px solid #00A4FF; /* Blue border for emphasis */
 }
 
 header h1 {
@@ -49,7 +50,7 @@ header p {
 /* Section Styles */
 .section {
     padding: 40px 20px;
-    background-color: #fff;
+    background-color: #2C2C2C; /* Slightly lighter dark background */
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -59,7 +60,7 @@ header p {
     font-size: 1.8rem;
     margin-bottom: 20px;
     text-align: center;
-    color: #0056b3;
+    color: #fff;
 }
 
 #contact p {
@@ -89,7 +90,7 @@ header p {
 
 #contact ul li a {
     font-weight: bold;
-    color: #0056b3;
+    color: #00A4FF; /* Blue for links */
     font-size: 1.2rem;
 }
 
@@ -99,11 +100,12 @@ header p {
 
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #111; /* Dark background for footer */
     color: #fff;
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
+    border-top: 3px solid #00A4FF; /* Blue border for footer emphasis */
 }
 
 footer p {
