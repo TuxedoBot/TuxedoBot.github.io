@@ -1,72 +1,77 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #1E1E1E; /* Dark background for consistency */
-    color: #D1D1D1; /* Light gray text for readability */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-h1, h2 {
-    margin: 0;
-    color: #fff; /* White text for headings */
+body {
+    line-height: 1.6;
+    background: #121212; /* Dark background matching the theme */
+    color: #fff; /* Light text for readability */
 }
 
-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+header .cta {
+    background: #f04;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+header .cta:hover {
+    background: #c00;
+}
+
+/* Main Section */
+.section {
+    padding: 2rem 0;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header Styles */
-header {
-    background-color: #111; /* Dark background for header */
-    color: #fff;
-    padding: 40px 20px;
     text-align: center;
-    border-bottom: 3px solid #00A4FF; /* Blue border for emphasis */
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
+/* Button Styling */
+button {
+    background: #333;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
     font-size: 1.2rem;
-    margin: 0;
 }
 
-/* Section Styles */
-.section {
-    padding: 40px 20px;
-    background-color: #2C2C2C; /* Slightly lighter dark background */
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+button:hover {
+    background: #555;
 }
 
-#contact h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #fff;
-}
-
-#contact p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
+/* Contact Section Buttons */
 .button-container {
     display: flex;
     justify-content: center;
@@ -78,7 +83,7 @@ header p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #00A4FF;
+    background-color: #333; /* Background color for buttons */
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
@@ -91,7 +96,7 @@ header p {
 }
 
 .contact-btn:hover {
-    background-color: #007bb5;
+    background-color: #555; /* Darker color on hover */
 }
 
 .contact-btn img {
@@ -106,38 +111,12 @@ header p {
 
 /* Footer Styles */
 footer {
-    background-color: #111; /* Dark background for footer */
+    background: #333;
     color: #fff;
+    padding: 1rem 0;
     text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-    border-top: 3px solid #00A4FF; /* Blue border for footer emphasis */
 }
 
 footer p {
     margin: 0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    #contact h2 {
-        font-size: 1.5rem;
-    }
-
-    #contact p {
-        font-size: 1rem;
-    }
-
-    .button-container {
-        flex-direction: column;
-        align-items: center;
-    }
 }
