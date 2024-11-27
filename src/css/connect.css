@@ -55,33 +55,46 @@ header p {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.section h2 {
+#contact h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
     text-align: center;
     color: #0056b3;
 }
 
-.section p {
+#contact p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 20px;
     text-align: center;
 }
 
-.section ul {
+#contact ul {
     list-style: none;
     padding: 0;
     text-align: center;
 }
 
-.section ul li {
+#contact ul li {
     font-size: 1.1rem;
-    margin: 10px 0;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.section ul li a {
+#contact ul li img {
+    margin-right: 10px;
+}
+
+#contact ul li a {
     font-weight: bold;
+    color: #0056b3;
+    font-size: 1.2rem;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Footer Styles */
@@ -107,11 +120,21 @@ footer p {
         font-size: 1rem;
     }
 
-    .section h2 {
+    #contact h2 {
         font-size: 1.5rem;
     }
 
-    .section p, .section ul li {
+    #contact p, #contact ul li {
         font-size: 1rem;
+    }
+
+    #contact ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #contact ul li img {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
